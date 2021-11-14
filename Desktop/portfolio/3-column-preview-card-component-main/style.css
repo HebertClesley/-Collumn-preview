@@ -1,0 +1,124 @@
+body{
+    overflow: hidden;
+}
+
+@font-face {
+    font-family:Big Shoulder;
+    src: url(/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+
+.grid-conteiner{
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    display:flex;
+    font-family:Big Shoulder;
+    color: #ffffff;
+}
+
+#card-1{
+    width: 24vw;
+    height: 70vh;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    padding: 30px;
+    
+}
+
+#card-2{
+    width: 24vw;
+    height: 70vh;
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;    
+}
+
+#card-3{
+    width: 24vw;
+    height: 70vh;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 30px;
+}
+
+.item h1{
+    font-size: 40px;
+}
+
+.item p{
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+.item button{
+    padding:  15px 30px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#card-1 button:hover {
+    background-color: #fff;
+    color: hsl(31, 77%, 52%);
+}
+
+#card-2 button:hover {
+    background-color: #fff;
+    color: hsl(184, 100%, 22%);
+}
+
+#card-3 button:hover {
+    background-color: #fff;
+    color: hsl(179, 100%, 13%);
+}
+ 
+@media(max-width:375px) {
+
+    body{
+        overflow: initial;
+    
+    }
+    .grid-conteiner{
+        width: 70vw;
+        height: 100vh;
+        align-items:center;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+        border: 0%;
+    }      
+    
+    #card-1{
+        width: 70vw;
+        height: 100vh;
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0px 0px;
+        
+    }#card-2{
+        width: 70vw;
+        height: 100vh;
+        background-color: hsl(184, 100%, 22%);
+        border-radius: 0px;
+        
+    }
+
+    #card-3{
+        width: 70vw;
+        height: 90vh;
+        background-color:  hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+        
+    }
+
+}
